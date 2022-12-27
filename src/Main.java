@@ -89,10 +89,10 @@ public class Main {
         short needResetGr = 7 * 1000;
         int perDay250gr = needResetGr / 250;
         int perDay500gr = needResetGr / 500;
-        float daysOnAverage = needResetGr / (float)((250 + 500) / 2);
+        int daysOnAverage = (perDay250gr + perDay500gr) / 2;
         System.out.println("Если спортсмен каждый день будет худеть на 250 грамм, то уйдет " + perDay250gr +
         " дней, если каждый день будет худеть на 500 грамм, то уйдет " + perDay500gr +
-        " дней, чтобы добиться результата, в среднем уйдет " + daysOnAverage + " дней.");
+        " дней, чтобы добиться результата, в среднем уйдет " + daysOnAverage + " день.");
     }
     public static void task8() {
         System.out.println("Задание 8");
@@ -103,7 +103,7 @@ public class Main {
         int incomeDenisAfter = incomeDenis + (incomeDenis * 10 / 100);
         int incomeKristinaAfter = incomeKristina + (incomeKristina * 10 / 100);
         int differenceInAnnualIncomeMasha = (incomeMashaAfter * 12) - (incomeMasha * 12);
-        System.out.println("Мвша теперь получает " + incomeMashaAfter + " рублей. Годовой доход вырос на " + differenceInAnnualIncomeMasha + " рублей.");
+        System.out.println("Маша теперь получает " + incomeMashaAfter + " рублей. Годовой доход вырос на " + differenceInAnnualIncomeMasha + " рублей.");
         int differenceInAnnualIncomeDenis = (incomeDenisAfter * 12) - (incomeDenis * 12);
         System.out.println("Денис теперь получает " + incomeDenisAfter + " рублей. Годовой доход вырос на " + differenceInAnnualIncomeDenis + " рублей.");
         int differenceInAnnualIncomeKristina = (incomeKristinaAfter * 12) - (incomeKristina * 12);
