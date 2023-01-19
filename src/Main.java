@@ -9,6 +9,7 @@ public class Main {
         task7();
         task8();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
         byte one = 100;
@@ -24,6 +25,7 @@ public class Main {
         double six = 1000000.5555555;
         System.out.println("Значение переменной six с типом double равно " + six);
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         float a = 27.12f;
@@ -41,6 +43,7 @@ public class Main {
         byte g = 67;
         System.out.println(g);
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         byte studentsLP = 23;
@@ -50,6 +53,7 @@ public class Main {
         int sheetsPerStudent = totalSheets / (studentsLP + studentsAS + studentsEA);
         System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги.");
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         byte bottlesIn2Min = 16;
@@ -63,6 +67,7 @@ public class Main {
         int bottlesInMonth = bottlesInDay * 30;
         System.out.println("За месяц машина произвела " + bottlesInMonth + " штук бутылок.");
     }
+
     public static void task5() {
         System.out.println("Задание 5");
         byte totalCans = 120;
@@ -71,8 +76,9 @@ public class Main {
         int totalCansOfWhitePaint = totalClasses * 2;
         int totalCansOfBrownPaint = totalClasses * 4;
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalCansOfWhitePaint +
-        " банок белой краски и " + totalCansOfBrownPaint + " банок коричневой краски.");
+                " банок белой краски и " + totalCansOfBrownPaint + " банок коричневой краски.");
     }
+
     public static void task6() {
         System.out.println("Задание 6");
         short grBananas = 5 * 80;
@@ -81,9 +87,10 @@ public class Main {
         short grEggs = 4 * 70;
         int weightGr = grBananas + grMilk + grIceCream + grEggs;
         int grPerKg = 1000;
-        float weightKg = weightGr / (float)grPerKg;
+        float weightKg = weightGr / (float) grPerKg;
         System.out.println("Вес спортзавтрака в граммах " + weightGr + ", а в киллограммах " + weightKg);
     }
+
     public static void task7() {
         System.out.println("Задача 7");
         short needResetGr = 7 * 1000;
@@ -91,9 +98,10 @@ public class Main {
         int perDay500gr = needResetGr / 500;
         int daysOnAverage = (perDay250gr + perDay500gr) / 2;
         System.out.println("Если спортсмен каждый день будет худеть на 250 грамм, то уйдет " + perDay250gr +
-        " дней, если каждый день будет худеть на 500 грамм, то уйдет " + perDay500gr +
-        " дней, чтобы добиться результата, в среднем уйдет " + daysOnAverage + " день.");
+                " дней, если каждый день будет худеть на 500 грамм, то уйдет " + perDay500gr +
+                " дней, чтобы добиться результата, в среднем уйдет " + daysOnAverage + " день.");
     }
+
     public static void task8() {
         System.out.println("Задание 8");
         int incomeMasha = 67760;
