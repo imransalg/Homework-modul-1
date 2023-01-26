@@ -27,8 +27,8 @@ public class arrays_part2 {
     public static void task2() {
         System.out.println("Задача 2");
         int[] arr = generateRandomArray();
-        int maxSpendPerDay = -1;
-        int minSpendPerDay = 1000000000;
+        int maxSpendPerDay = arr[0];
+        int minSpendPerDay = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < minSpendPerDay) {
                 minSpendPerDay = arr[i];
@@ -49,7 +49,7 @@ public class arrays_part2 {
     for (int i = 0; i < arr.length; i++) {
         totalCosts += arr[i];
     }
-    double averageCost =(float) totalCosts / 30;
+    double averageCost =(float) totalCosts / arr.length;
     System.out.println("Средняя сумма трат за месяц составила " + averageCost + " рублей.");
     }
     public static void task4() {
