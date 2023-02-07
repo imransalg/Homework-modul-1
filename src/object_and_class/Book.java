@@ -2,8 +2,8 @@ package object_and_class;
 
 public class Book {
     private String bookName;
-    private Author authorName;
-    int publishingYear;
+    private Author author;
+    private int publishingYear;
 
     public Book (String bookName, int publishingYear) {
         this.bookName = bookName;
@@ -13,7 +13,6 @@ public class Book {
     public String getBookName() {
         return this.bookName;
     }
-
     public int getPublishingYear() {
         return this.publishingYear;
     }
