@@ -12,6 +12,7 @@ public class object_and_class {
         System.out.println("Год выпуска - " + littlePrince.getPublishingYear());
         littlePrince.setPublishingYear(1988);
         System.out.println("Год выпуска - " + littlePrince.getPublishingYear());
+        System.out.println(littlePrince + ", " + author);
         printSeparator();
         Book masterAndMargarita = new Book("Мастер и Маргарита", 1966);
         Author author1 = new Author("Михаил Булгаков");
@@ -20,6 +21,8 @@ public class object_and_class {
         System.out.println("Год выпуска - " + masterAndMargarita.getPublishingYear());
         masterAndMargarita.setPublishingYear(1967);
         System.out.println("Год выпуска - " + masterAndMargarita.getPublishingYear());
+        System.out.println(masterAndMargarita + ", " + author1);
+        System.out.println(author.equals(author1));
     }
 }
 
