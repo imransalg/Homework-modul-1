@@ -1,5 +1,7 @@
 package object_and_class;
 
+import java.util.Objects;
+
 public class Author {
     private String author;
 
@@ -12,21 +14,22 @@ public class Author {
     }
 
     @Override
-    public String toString(){
-        return "aвтор " + author;
+    public String toString() {
+        return "Author{" +
+                "author='" + author + '\'' +
+                '}';
     }
 
     @Override
-    public boolean equals(Object other) {
-        if (getClass() != other.getClass()) {
-            return false;
-        }
-        Author c = (Author) other;
-        return author.equals(c.author);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author1 = (Author) o;
+        return author.equals(author1.author);
     }
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(author);
+        return Objects.hash(author);
     }
 }
